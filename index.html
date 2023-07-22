@@ -20,8 +20,11 @@
 margin: 0;
 padding: 0;
 }
-body {
+.bdy{
 background-color: blanchedalmond;
+}
+.hidden{
+overflow-y: hidden;
 }
 .main {
 display: flex;
@@ -168,7 +171,7 @@ transition: all 1s;
 }
 </style>
 </head>
-<body>
+<body class="bdy hidden">
 <div class="popup">
 <center>
 <h3 class="h3 fs-5 mt-3">WALIMATUL KHITAN</h3>
@@ -328,6 +331,7 @@ Keluarga Ananda
 
 
 <script>
+  let body = document.querySelector('.bdy');
 let wt1 = document.querySelector('#wt1');
 let wt2 = document.querySelector('#wt2');
 let ad21 = document.querySelector('#ad21');
@@ -346,6 +350,7 @@ open.style.display = 'none';
 play.play();
 ad1.style.transform = 'translateX(0)';
 n1.style.transform = 'translateX(0)';
+  body.classList.remove('hidden');
 });
 
 window.addEventListener('scroll', function() {
