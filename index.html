@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sabtu, 5 Agustus 2023">
+  <link rel="shortcut icon" href="assets/myimg.jpg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<title>Khitanan Arsenio Dzakwan Rafardhan</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+
+
+* {
+margin: 0;
+padding: 0;
+}
+.bdy{
+background-color: blanchedalmond;
+}
+.hidden{
+overflow-y: hidden;
+}
+.main {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+overflow-x: hidden;
+}
+.h1 {
+
+font-family: 'Kavoon', cursive;
+font-weight: bold;
+}
+.h3 {
+font-family: 'Carter One', cursive;
+font-size: 25pt;
+}
+
+.row {
+display: flex;
+padding: 10px;
+height: 60px;
+}
+.hari, .jam, .menit, .detik {
+background-color: green;
+width: 60px;
+height: 60px;
+margin: 2px;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+}
+.twt {
+font-family: 'Sacramento', cursive;
+}
+.wt {
+background-color: white;
+width: 300px;
+text-align: center;
+border-radius: 25px;
+box-shadow: 0px 0px 5px black;
+
+}
+#ad21 {
+transition: all 1s;
+transform: translateX(-100%);
+}
+.comment {
+width: 300px;
+box-shadow: 0px 0px 2px black;
+padding: 25px;
+overflow-x: hidden;
+height: 400px;
+}
+.material-symbols-outlined {
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,
+'opsz' 48
+}
+.hrow {
+text-align: center;
+display: flex;
+flex-direction: column;
+margin: 0px 15%;
+}
+#ad1 {
+transform: translateX(100%);
+transition: all 1s;
+}
+.tf1, .tf2 {
+margin: 5px;
+background-color: white;
+padding: 10px;
+border-radius: 20px;
+box-shadow: 0px 0px 5px black;
+}
+.nit {
+width: 55px;
+height: 55px;
+transition: 1s;
+}
+#n1 {
+transform: translateX(-100%);
+transition: all 1s;
+}
+#bu1 {
+transition: all 1s;
+}
+#bu2 {
+transition: all 1s;
+}
+#bu3 {
+transition: all 1s;
+}
+#bu4 {
+transition: all 1s;
+}
+#tf1 {
+transition: all 1s;
+}
+#tf2 {
+transition: all 1s;
+}
+.icon {
+transition: 1s;
+}
+.aicon {
+transform: translateY(5px);
+transition: 1s;
+}
+.nat {
+transition: 1s;
+}
+.popup {
+position: fixed;
+left: 10%;
+width: 80%;
+height: 80%;
+z-index: 9997;
+background-color: blanchedalmond;
+border-radius: 25px;
+box-shadow: 0px 0px 5px black;
+}
+#nm1 {
+transform: translateX(100%);
+transition: all 1s;
+}
+#nm2 {
+transform: translateX(-100%);
+transition: all 1s;
+}
+#wt1 {
+transform: scale(0);
+transition: all 1s;
+}
+#wt2 {
+transform: scale(0);
+transition: all 1s;
+}
+</style>
+</head>
+<body class="bdy hidden">
+<div class="popup">
+<center>
+<h3 class="h3 fs-5 mt-3">WALIMATUL KHITAN</h3>
+<h5 class="h3 mt-2 fw-bold fs-5">Arsenio Dzakwan Rafardhan</h5>
+<img src="assets/ad2.png" alt="myimg" width="200" style="z-index: 9999;" class="mt-3 mb-3">
+<p>
+Kepada Yth,
+</p>
+<p class="fw-bold">
+Penerima Undangan
+</p>
+<button id="btn" class="btn btn-success">Buka Undangan</button>
+</center>
+</div>
+<audio hidden id="play">
+<source src="assets/sound.mp3" type="audio/mpeg">
+</audio>
+<div class="main mt-5 mb-2">
+<h1 class="h1">WALIMATUL KHITAN</h1>
+<img src="assets/ad1.png" alt="myimg" width="250" id="ad1">
+<h5 class="h3 mt-2 fw-bold fs-4" id="n1">Arsenio Dzakwan Rafardhan</h5>
+<p class="fw-bold mt-2 mb-2">
+Pada
+</p>
+<span class="fs-5 ff-breadley fw-bold d-block do-animate not-scrollanimate h3 mt-1 mb-3">Sabtu, 5 Agustus 2023</span>
+<p class="fw-bold mt-2 mb-2">
+Acara akan dimulai dalam
+</p>
+<div class="row">
+<div class="nat hari">
+<div id="h"></div>
+<p>
+Hari
+</p>
+</div>
+<div class="nat jam">
+<div id="j"></div>
+<p>
+Jam
+</p>
+</div>
+<div class="nat menit">
+<div id="m"></div>
+<p>
+Menit
+</p>
+</div>
+<div class="nat detik">
+<div id="d"></div>
+<p>
+Detik
+</p>
+</div>
+</div>
+<div class="demo"></div>
+<img src="assets/icon.png" alt="icon" width="25" class="mt-4" id="icon">
+<div class="main mt-5 mb-5">
+<img id="bu1" src="https://www.linkundangan.com/files/assets-builder/ornaments/eqweq.png" alt="bunga" class="mt-5 mb-3" width="350">
+<span class="fw-bold" style="font-family: 'Sacramento', cursive; font-size: 25pt;">Assalamualaikum Wr.Wb.
+</span>
+<p class="fw-bold mt-3">
+Dengan segala kerendahan hati,
+</p>
+<p class="fw-bold mb-2 text-center">
+Saya mengundang Bapak/Ibu/Om/Tante/Saudara/i untuk menghadiri acara khitanan anak kami,
+</p>
+
+<img id="ad21" src="assets/ad2.png" alt="myimg" width="200" class="mt-3 mb-3">
+<h4 id="nm1" style="font-family: 'Carter One', cursive;">Arsenio Dzakwan Rafardhan</h4>
+<p class="mt-2">
+kami yang berbahagia,
+</p>
+<p id="nm2">
+Bpk Azuddin, SH & Ibu Fitri Yaningsih, S.Pd
+</p>
+<p class="fw-bold mt-4 mb-5 text-center">
+Kami sangat berharap Bapak/Ibu/Om/Tante/Saudara/i dapat menghadiri acara tersebut.
+</p>
+<img id="bu2" src="https://www.linkundangan.com/files/assets-builder/ornaments/eqweq.png" alt="bunga" class="mt-5 mb-3" width="350">
+<span class="fs-2 ff-breadley fw-bold d-block do-animate not-scrollanimate h3 mt-1 mb-3">Waktu & Tempat</span>
+<p class="fw-bold mt-2 mb-2 text-center">
+Ingatkan saya dengan Google Calendar
+</p>
+<a class='btn btn-sm btn-success text-white' href='https://calendar.google.com/calendar/u/0/r/eventedit?text=Khitanan Arsenio Dzakwan&details=Khitanan Arsenio Dzakwan&dates=20230805T000000/20230805T240000'><i class='fa fa-bell'></i> Atur Pengingat</a>
+<div id="wt1" class="wt mt-4">
+<h4 class="twt text-center mt-3 fs-1">Waktu</h4>
+<span class="ff-breadley fw-bold d-block do-animate not-scrollanimate mt-1 mb-3">Sabtu, 5 Agustus 2023</span>
+</div>
+<div id="wt2" class="wt mt-4 mb-5">
+<h4 class="twt text-center mt-3 fs-1">Tempat</h4>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.3007331778704!2d105.222300970248!3d-5.37102584179039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40daac69dac753%3A0x7ace65d750e329b5!2sGg.%20Alun%20-%20Alun%20No.43%2C%20Rajabasa%2C%20Kec.%20Rajabasa%2C%20Kota%20Bandar%20Lampung%2C%20Lampung%2035142!5e0!3m2!1sid!2sid!4v1690693141630!5m2!1sid!2sid" style="border-radius: 10px; width: 250px; margin: 10px 0px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+</div>
+<img id="bu3" src="https://www.linkundangan.com/files/assets-builder/ornaments/eqweq.png" alt="bunga" class="mt-5 mb-3" width="350">
+<p class="fs-2 ff-breadley fw-bold d-block do-animate not-scrollanimate h3 mb-3">
+Kirim Pesan
+</p>
+<p class="fw-bold mt-2 mb-2 text-center">
+Berikan komentar terbaikmu
+</p>
+<div class="comment mb-5">
+<div id="disqus_thread"></div>
+<script>
+
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+var disqus_config = function () {
+this.page.url = 'https://arjunamash.eu.org/'; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = '/index.html/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() {
+// DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://khitanan5agst.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+<p class="fw-bold mt-5 mb-2 text-center">
+Atas kehadirannya kami ucapkan,
+</p>
+<span class="fw-bold" style="font-family: 'Sacramento', cursive; font-size: 30pt;">Jazakumullah Khairan
+</span>
+<p class=" mb-2 text-center">
+Hormat Kami,
+</p>
+<p class="fw-bold mb-2 text-center">
+Keluarga Ananda
+</p>
+<h5 class="h3 mt-2 fw-bold fs-4">Arsenio Dzakwan Rafardhan</h5>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<small>@Copyright, Genz RPL Skapan / Mantoes Organizer</small>
+<small>=> <a href="https://api.whatsapp.com/send?phone=6282176074642&text=Hallo%20Mantoes%20Organizer" class="text-decoration-none">082176074642</a> (WA) </small>
+<small>=> <a href="https://instagram.com/mantoesorganizer?igshid=OGY3MTU3OGY1Mw==" class="text-decoration-none">Mantoes Organizer</a> (IG) </small>
+
+
+
+
+
+
+
+<script>
+  let body = document.querySelector('.bdy');
+let wt1 = document.querySelector('#wt1');
+let wt2 = document.querySelector('#wt2');
+let ad21 = document.querySelector('#ad21');
+let bu1 = document.querySelector('#bu1');
+let bu2 = document.querySelector('#bu2');
+let bu3 = document.querySelector('#bu3');
+let icon = document.querySelector('#icon');
+let n1 = document.querySelector('#n1');
+let ad1 = document.querySelector('#ad1');
+let open = document.querySelector('.popup');
+let btn = document.querySelector('#btn');
+let play = document.querySelector('#play');
+
+btn.addEventListener('click', function() {
+open.style.display = 'none';
+play.play();
+ad1.style.transform = 'translateX(0)';
+n1.style.transform = 'translateX(0)';
+  body.classList.remove('hidden');
+});
+
+window.addEventListener('scroll', function() {
+let value = scrollY;
+wt1.style.transform = 'scale(0)';
+wt2.style.transform = 'scale(0)';
+bu1.style.transform = 'scale(0)';
+bu2.style.transform = 'scale(0)';
+bu3.style.transform = 'scale(0)';
+
+ad21.style.transform = 'translateX(-100%)';
+nm1.style.transform = 'translateX(100%)';
+nm2.style.transform = 'translateX(-100%)';
+
+if (value > 200) {
+bu1.style.transform = 'scale(1)';
+}
+if (value > 650) {
+ad21.style.transform = 'translateX(0)';
+nm1.style.transform = 'translateX(0)';
+nm2.style.transform = 'translateX(0)';
+}
+if (value > 1300) {
+bu2.style.transform = 'scale(1)';
+wt2.style.transform = 'scale(1)';
+wt1.style.transform = 'scale(1)';
+}
+if (value > 1700) {
+bu3.style.transform = 'scale(1)';
+}
+
+});
+
+
+
+let nat = document.querySelectorAll('.nat');
+setInterval(function() {
+nat[0].classList.toggle('nit');
+nat[1].classList.toggle('nit');
+nat[2].classList.toggle('nit');
+nat[3].classList.toggle('nit');
+icon.classList.toggle('aicon');
+}, 1000);
+
+
+
+
+// Tetapkan tanggal kita menghitung mundur
+var countDownDate = new Date("August 5, 2023 10:00:20").getTime();
+
+// Perbarui hitungan mundur setiap 1 detik
+var x = setInterval(function() {
+
+// Dapatkan tanggal dan waktu hari ini
+var now = new Date().getTime();
+
+// Temukan jarak antara sekarang dan tanggal hitung mundur
+var distance = countDownDate - now;
+
+// Perhitungan waktu untuk hari, jam, menit dan detik
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+// Keluarkan hasil dalam elemen dengan id = "demo"
+document.getElementById("h").innerHTML = days;
+document.getElementById("j").innerHTML = hours;
+document.getElementById("m").innerHTML = minutes;
+document.getElementById("d").innerHTML = seconds;
+
+//Jika hitungan mundur selesai, tulis beberapa teks
+if (distance < 0) {
+clearInterval(x);
+document.getElementById("demo").innerHTML = "ACARA SUDAH DIMULAI / SELESAI";
+}
+}, 1000);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
